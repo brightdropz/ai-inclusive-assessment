@@ -1,0 +1,121 @@
+{
+    "dataset": "UCI Student Performance - Portuguese subset",
+    "source": "https://archive.ics.uci.edu/dataset/320/student+performance",
+    "dataset_records": 649,
+    "raw_columns": 33,
+    "selected_input_features": [
+        "studytime",
+        "failures",
+        "schoolsup",
+        "famsup",
+        "paid",
+        "activities",
+        "nursery",
+        "higher",
+        "internet",
+        "traveltime",
+        "freetime",
+        "goout",
+        "Dalc",
+        "Walc",
+        "health",
+        "absences"
+    ],
+    "selected_feature_count": 16,
+    "target": "Pass if G3 >= 10; Fail if G3 < 10",
+    "training_records": 519,
+    "testing_records": 130,
+    "random_state": 42,
+    "test_size": 0.2,
+    "model": "RandomForestClassifier",
+    "n_estimators": 300,
+    "accuracy": 0.7461538461538462,
+    "precision_pass_class": 0.8737864077669902,
+    "recall_pass_class": 0.8181818181818182,
+    "f1_pass_class": 0.8450704225352113,
+    "balanced_accuracy": 0.5840909090909091,
+    "roc_auc": 0.6054545454545455,
+    "confusion_matrix_labels": [
+        "Fail",
+        "Pass"
+    ],
+    "confusion_matrix": [
+        [
+            7,
+            13
+        ],
+        [
+            20,
+            90
+        ]
+    ],
+    "classification_report": {
+        "Fail": {
+            "precision": 0.25925925925925924,
+            "recall": 0.35,
+            "f1-score": 0.2978723404255319,
+            "support": 20.0
+        },
+        "Pass": {
+            "precision": 0.8737864077669902,
+            "recall": 0.8181818181818182,
+            "f1-score": 0.8450704225352113,
+            "support": 110.0
+        },
+        "accuracy": 0.7461538461538462,
+        "macro avg": {
+            "precision": 0.5665228335131247,
+            "recall": 0.5840909090909091,
+            "f1-score": 0.5714713814803716,
+            "support": 130.0
+        },
+        "weighted avg": {
+            "precision": 0.7792437695350317,
+            "recall": 0.7461538461538462,
+            "f1-score": 0.7608861022106451,
+            "support": 130.0
+        }
+    },
+    "top_10_feature_importance": [
+        {
+            "feature": "numeric__failures",
+            "importance": 0.2093915055350679
+        },
+        {
+            "feature": "categorical__higher_yes",
+            "importance": 0.07794532064741018
+        },
+        {
+            "feature": "numeric__absences",
+            "importance": 0.07547124242145796
+        },
+        {
+            "feature": "categorical__higher_no",
+            "importance": 0.07116776050390955
+        },
+        {
+            "feature": "numeric__goout",
+            "importance": 0.066712709402084
+        },
+        {
+            "feature": "numeric__freetime",
+            "importance": 0.06665690307382363
+        },
+        {
+            "feature": "numeric__Walc",
+            "importance": 0.06280477319027558
+        },
+        {
+            "feature": "numeric__studytime",
+            "importance": 0.053186848663924764
+        },
+        {
+            "feature": "numeric__health",
+            "importance": 0.048022486364196336
+        },
+        {
+            "feature": "numeric__Dalc",
+            "importance": 0.04514295742737272
+        }
+    ]
+}

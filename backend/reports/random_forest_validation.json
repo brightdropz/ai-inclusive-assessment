@@ -1,0 +1,74 @@
+{
+    "dataset": "UCI Student Performance - Portuguese",
+    "records": 649,
+    "features": [
+        "studytime",
+        "failures",
+        "schoolsup",
+        "famsup",
+        "paid",
+        "activities",
+        "nursery",
+        "higher",
+        "internet",
+        "traveltime",
+        "freetime",
+        "goout",
+        "Dalc",
+        "Walc",
+        "health",
+        "absences"
+    ],
+    "target": "Pass if G3 >= 10; otherwise Fail",
+    "train_records": 519,
+    "test_records": 130,
+    "cross_validation_folds": 5,
+    "random_state": 42,
+    "model": "RandomForestClassifier",
+    "trees": 300,
+    "threshold_selection": "Maximise Fail F1 on training out-of-fold predictions",
+    "default_threshold": 0.5,
+    "selected_fail_probability_threshold": 0.5599999999999999,
+    "default_test_metrics": {
+        "accuracy": 0.7461538461538462,
+        "balanced_accuracy": 0.5840909090909091,
+        "pass_precision": 0.8737864077669902,
+        "pass_recall": 0.8181818181818182,
+        "pass_f1": 0.8450704225352113,
+        "fail_precision": 0.25925925925925924,
+        "fail_recall": 0.35,
+        "fail_f1": 0.2978723404255319,
+        "roc_auc_pass": 0.6054545454545455,
+        "confusion_matrix": [
+            [
+                7,
+                13
+            ],
+            [
+                20,
+                90
+            ]
+        ]
+    },
+    "tuned_test_metrics": {
+        "accuracy": 0.7538461538461538,
+        "balanced_accuracy": 0.5886363636363636,
+        "pass_precision": 0.875,
+        "pass_recall": 0.8272727272727273,
+        "pass_f1": 0.8504672897196262,
+        "fail_precision": 0.2692307692307692,
+        "fail_recall": 0.35,
+        "fail_f1": 0.30434782608695654,
+        "roc_auc_pass": 0.6054545454545455,
+        "confusion_matrix": [
+            [
+                7,
+                13
+            ],
+            [
+                19,
+                91
+            ]
+        ]
+    }
+}

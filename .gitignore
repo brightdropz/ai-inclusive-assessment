@@ -1,0 +1,29 @@
+
+# Environment secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+
+# Python
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+
+# Local databases
+**/*.db
+
+# Node.js
+**/node_modules/
+**/dist/
+
+# Temporary files
+*.log
+.DS_Store
+
+# Download archives already extracted
+backend/data/*.zip
+backend/data/uci_student_performance/*.zip
+backend/data/uci_student_performance/.*_old
